@@ -11,7 +11,7 @@ namespace Intuitive_Storage_Technology.Model
     {
 
         #region KvitteringProp
-        public int Kvittering { get; set; }
+        //public int Kvittering { get; set; }
         public int OrganisationID { get; set; }
         public ObservableCollection<Vare> Varelist;
         public bool Tilstand { get; set; }
@@ -19,11 +19,10 @@ namespace Intuitive_Storage_Technology.Model
         #endregion
 
         #region MyRegion
-        public Kvittering(int kvittering, int organisationId, bool tilstand)
+
+        public Kvittering()
         {
-            Kvittering = kvittering;
-            OrganisationID = organisationId;
-            Tilstand = tilstand;
+            
         }
         #endregion
     }
